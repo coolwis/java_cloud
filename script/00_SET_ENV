@@ -1,0 +1,41 @@
+#! /usr/bin/bash
+
+export APP_NETWORK=standard_net
+export DOCKER_WAS_NAME=dockerWAS
+export DOCKER_DB_NAME=dockerDB
+export APP_BASE=/app
+export MAVEN=${APP_BASE}/build/maven
+
+# github 
+#case 1
+#export SOURCE_URL=https://${ID}:${PWD}@github.com/parkseungchul/java_cloud
+#case 2 git config --global credentaial.helper store를 이용해서 로컬 머신에 로그인 정보 영구저장
+export SOURCE_URL=https://coolwis:hong0303^^@github.com/coolwis/java_cloud
+
+#project_name (부모 자식 구조가 아니면 app_name과 동일하게 )
+export PROJECT_NAME=java_cloud2
+export APP_NAME=standard
+
+#directory
+#부모 자식 구조의 구성이라면 다르게 됨.
+export PROJECT_DIR=/app/$PROJECT_NAME
+export APP_DIR=/app/$PROJECT_NAME/$APP_NAME
+
+export IMAGE_NAME=parkseungchul/cloud:springboot_v1
+
+export VERSION=1
+export JAR_NAME=$APP_NAME-$VERSION
+export SPRINGBOOT_PORT=8080
+
+export PARAMETER=spring.profiles.active=prod,db-mariadb-docker
+export ACTIVE_PROFILE=prod,db-maria-docker
+
+
+#db area
+export SPRINGBOOT_PORT=8080
+export MYSQL_DATABASE=prod
+export MYSQL_USER=user01
+export MYSQL_PASSWORD=user01
+export MYSQL_ROOT_PASSWORD=password
+export LOCAL_DB_DIR=/app/mariadb
+ 
