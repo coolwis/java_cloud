@@ -10,7 +10,7 @@ export MAVEN=${APP_BASE}/build/maven
 #case 1
 #export SOURCE_URL=https://${ID}:${PWD}@github.com/parkseungchul/java_cloud
 #case 2 git config --global credentaial.helper store를 이용해서 로컬 머신에 로그인 정보 영구저장
-export SOURCE_URL=https://coolwis:hong0303^^@github.com/coolwis/java_cloud
+export SOURCE_URL=https://github.com/coolwis/java_cloud
 
 #project_name (부모 자식 구조가 아니면 app_name과 동일하게 )
 export PROJECT_NAME=java_cloud2
